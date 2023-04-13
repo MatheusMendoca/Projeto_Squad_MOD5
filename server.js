@@ -1,4 +1,5 @@
 import produtos from './src/controllers/produtos.js';
+import Distribuidora from './src/controllers/distribuidoras.js'
 import express from 'express';
 
 const app = express ();
@@ -14,4 +15,5 @@ app.listen(port, () => {
 
 app.use(express.json())
 
+Distribuidora.distrubuidorarotas(app);
 produtos.produtosRotas(app);
