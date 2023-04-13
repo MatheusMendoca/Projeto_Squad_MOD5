@@ -15,5 +15,5 @@ app.listen(port, () => {
 
 app.use(express.json())
 
-Distribuidora.distrubuidorarotas(app);
+Distribuidora.distribuidorarotas(app);
 produtos.produtosRotas(app);
